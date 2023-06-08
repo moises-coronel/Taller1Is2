@@ -1,19 +1,21 @@
 package vacation;
 import java.util.ArrayList;
+import java.util.List;
 
-public class Packagevacation {
+public class Packagevacaction {
 
     String destination;
     int numTravelers;
     int durationVac;
     int baseCost = 1000;
-    double penalty = 0;
-    double discount = 0;
-
+    double penalty;
+    double discount;
+    List<String> addons = new ArrayList<String>();
     /**
-     * Este es el constructor.
+     * constructor de paquete de vacaciones.
      */
-    public Packagevacation(String destination, int numTravelers, int durationVac) {
+    
+    public Packagevacaction(String destination, int numTravelers, int durationVac) {
         super();
         this.destination = destination;
         this.numTravelers = numTravelers;
@@ -21,32 +23,31 @@ public class Packagevacation {
     }
 
     /**
-     * MÈtodo para verificar si es popular.
+     * M√©todo para deterimnar si es uno de los lugares populares.
      */
     public void isPopular() {
-        if (this.destination.equals("Paris")) {
+        if ("Paris".equals(this.destination)) {
             this.baseCost = this.baseCost + 500;
             //System.out.println("Paris");
         }
-        if (this.destination.equals("New York City")) {
+        if ("New York City".equals(this.destination)) {
             this.baseCost = this.baseCost + 600;
         }
     }
 
     /**
-     * MÈtodo para calcular el descuento.
+     * M√©todo para calcular el descuento.
      */
     public void isDiscount() {
         if (this.numTravelers > 4 && this.numTravelers < 10) {
             this.discount = 0.1;
-        }
-        if (this.numTravelers > 10) {
+        }else if (this.numTravelers > 10) {
             this.discount = 0.2;
         }
     }
 
     /**
-     * MÈtodo para calcular la penalidad.
+     * M√©todo para calcular penalidad
      */
     public void isPenalty() {
         if (this.durationVac < 7) {
@@ -58,7 +59,7 @@ public class Packagevacation {
     }
 
     /**
-     * MÈtodo para validar el n˙mero de pasajeros.
+     * M√©todo para validarsi paquete excede 80 personas.
      */
     public boolean validatePack() {
         if (this.numTravelers > 80) {
@@ -69,10 +70,25 @@ public class Packagevacation {
     }
 
     /**
-     * MÈtodo para calcular el costo.
+     * M√©todo para calcular costo
      */
     public double calCost() {
         double cost = (this.baseCost + this.penalty) * (1 - this.discount);
         return cost;
     }
+
+    /**
+     * M√©todo para a√±adir los paquetes adicionales.
+     */
+    public void addAddon(String addon) {
+        addons.add(addon);
+    }
+
+  
+    
+
+    public List<String> getAddons() {
+        return addons;
+    }
+
 }

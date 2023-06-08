@@ -1,0 +1,14 @@
+src/main/java/vacation/Main.java:23:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/vacation/Packagevacaction.java:10:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'penalty'
+src/main/java/vacation/Packagevacaction.java:11:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'discount'
+src/main/java/vacation/Packagevacaction.java:12:	LooseCoupling:	LooseCoupling: Avoid using implementation types like 'ArrayList'; use the interface instead
+src/main/java/vacation/Packagevacaction.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/vacation/Packagevacaction.java:23:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/vacation/Packagevacaction.java:24:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/vacation/Packagevacaction.java:28:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/vacation/Packagevacaction.java:38:	UnusedAssignment:	UnusedAssignment: The value assigned to field 'discount' is never used (overwritten on line 41)
+src/main/java/vacation/Packagevacaction.java:46:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/vacation/Packagevacaction.java:56:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/vacation/Packagevacaction.java:65:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/vacation/Packagevacaction.java:71:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/vacation/Packagevacaction.java:78:	LooseCoupling:	LooseCoupling: Avoid using implementation types like 'ArrayList'; use the interface instead
